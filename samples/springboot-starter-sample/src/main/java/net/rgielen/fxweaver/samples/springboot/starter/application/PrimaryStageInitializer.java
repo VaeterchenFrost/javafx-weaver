@@ -1,12 +1,13 @@
 package net.rgielen.fxweaver.samples.springboot.starter.application;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationListener;
+import org.springframework.stereotype.Component;
+
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import net.rgielen.fxweaver.core.FxWeaver;
 import net.rgielen.fxweaver.samples.springboot.starter.controller.MainWindow;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationListener;
-import org.springframework.stereotype.Component;
 
 /**
  * @author <a href="mailto:rene.gielen@gmail.com">Rene Gielen</a>

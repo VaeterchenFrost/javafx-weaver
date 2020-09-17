@@ -1,11 +1,12 @@
 package net.rgielen.fxweaver.samples.springboot.starter.application;
 
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.context.ConfigurableApplicationContext;
+
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.stage.Stage;
 import net.rgielen.fxweaver.samples.springboot.starter.FxWeaverSpringBootStarterSampleApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.context.ConfigurableApplicationContext;
 
 /**
  * @author <a href="mailto:rene.gielen@gmail.com">Rene Gielen</a>
@@ -17,8 +18,7 @@ public class SpringbootJavaFxApplication extends Application {
 
     @Override
     public void init() throws Exception {
-        this.context = new SpringApplicationBuilder()
-                .sources(FxWeaverSpringBootStarterSampleApplication.class)
+        this.context = new SpringApplicationBuilder().sources(FxWeaverSpringBootStarterSampleApplication.class)
                 .run(getParameters().getRaw().toArray(new String[0]));
     }
 

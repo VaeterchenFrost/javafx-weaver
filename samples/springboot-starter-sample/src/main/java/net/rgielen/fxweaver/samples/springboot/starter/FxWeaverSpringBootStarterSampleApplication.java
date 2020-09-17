@@ -1,8 +1,9 @@
 package net.rgielen.fxweaver.samples.springboot.starter;
 
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import javafx.application.Application;
 import net.rgielen.fxweaver.samples.springboot.starter.application.SpringbootJavaFxApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * FxWeaverSpringBootStarterSampleApplication.
